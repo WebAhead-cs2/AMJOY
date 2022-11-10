@@ -1,0 +1,129 @@
+body {
+    background-image: url("../Items/Music_headset.jpg");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SingerButton {
+    background-color: #a916e8;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    font-size: 30px;
+    padding: 10px 30px;
+    border: 5px solid black;
+    box-shadow: 6px 5px #343434;
+    transition: 0.2s all;
+    cursor: pointer;
+    margin-top: 10px;
+    user-select: none;
+    outline: none;
+}
+
+.SongButton {
+    background-color: #a916e8;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    font-size: 30px;
+    padding: 10px 30px;
+    border: 5px solid black;
+    box-shadow: 6px 5px #343434;
+    transition: 0.2s all;
+    cursor: pointer;
+    margin-top: 10px;
+    user-select: none;
+    outline: none;
+}
+
+.SingerButton:hover {
+    box-shadow: 0px 0px;
+    transform: scale(.95);
+    padding: 10px 28px;
+    letter-spacing: 0.5px;
+    background-color: #e2a9fa;
+}
+
+.SingerButton.hide {
+    background-image: url("../Items/1926737.jpg");
+}
+
+.SongButton:hover {
+    box-shadow: 0px 0px;
+    transform: scale(.95);
+    padding: 10px 28px;
+    letter-spacing: 0.5px;
+    background-color: #e2a9fa;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+}
+
+.MainHeader {
+    font-size: x-large;
+    align-items: center;
+    nav-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.searchBar {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px, 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+    position: center;
+}
+
+.searchBar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px, 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+::placeholder {
+    color: #cac7ff;
+}
+
+.searchBar button img {
+    width: 25px;
+}
+
+.searchBar button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #58629b;
+    cursor: pointer;
+}
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+#logo {
+    position: fixed;
+    top: 1000;
+    left: 0;
+}
+
+.hide {
+    display: none;
+}
