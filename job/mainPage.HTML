@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMJOY PLAYER</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+      
+    <div class ="main">
+       <!-- <img id="logo" src="Items\logoBLACK-reduced - Copy.jpg">-->
+        <div class ="page">
+         <div class="page-header">
+          <div class="buttonHeader">
+            <p class="MainHeader">Pick your choise</p>
+            <button id="Singer" class="Button">Singer</button>
+            <button id="Song" class="Button">Song</button>
+          </div>
+          
+          <form id="search"  class="searchBar">
+            <input type="text" id = "searchText" class = "form-control" placeholder="Type here..." name = "search">
+            <button type="button" id = "search-btn" class = "search-btn" >
+              <i class = "fas fa-search"></i>
+            </button>
+            <div class = "search-list" id = "search-list">
+              <!-- <div class = "search-list-item">
+                 <p>Billie Eilish</p>
+               </div>-->
+            </div> 
+    
+          </form>
+         </div>
+        <div class="page-body">
+             <div class = "body-content">
+                   <div class = "app-body-content-Singer-photp">
+                      
+                   </div>
+
+                   <div class = "body-content-list">
+                       <div id ="name" class = "name">Singer Name</div>
+
+                       <div class = "app-body-tabs-head">
+                        <button type = "button" class = "tab-head-single" data-id = "1">
+                            <span>song</span>
+                        </button>
+                        <button type = "button" class = "tab-head-single" data-id = "2">
+                            <span>lyrics</span>
+                        </button>
+                        <button type = "button" class = "tab-head-single" data-id = "3">
+                            <span>artist</span>
+                        </button>
+
+                       </div>
+                       <div class = "tabs-body">
+                        
+                                  <div class = "tab-body-single song">
+                                    <audio controls id="audio">
+                                      <source src="horse.mp3" type="audio/mpeg">
+                                  
+                                    </audio>
+                                      
+                                  </div>
+                       
+                                  <div id="lyrics" class = "tab-body-single lyrics">
+                                     <p>Billie Eilish Pirate Baird O'Connell (/ˈaɪlɪʃ/ EYE-lish;[1] born December 18, 2001) is an American singer-songwriter. She first gained public attention in 2015 with her debut single "Ocean Eyes", written and produced by her brother Finneas O'Connell, with whom she collaborates on music and live shows. In 2017, she released her debut extended play (EP), titled Don't Smile at Me. Commercially successful, it reached the top 15 of record charts in numerous countries, including the US, UK, Canada, and Australia.</p>
+                                      
+                                  </div>
+       
+
+                                  <div class = "tab-body-single artist">
+                                    <img  id="imageOfArtist" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Billie_Eilish_2019_by_Glenn_Francis_%28cropped%29_2.jpg/220px-Billie_Eilish_2019_by_Glenn_Francis_%28cropped%29_2.jpg" style="max-width: 20%;">   
+                                      
+                                  </div>
+                                                     
+                       </div>
+
+
+                    
+             </div>
+
+
+
+
+        </div>
+      </div> 
+    </div> 
+   </div>
+  </body>
+  <script src="./worker.js"></script>
+  <script src="./data/Song.js"></script>
+</html>
